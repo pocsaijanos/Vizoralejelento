@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">vizoralejelento</string>
+    <string name="password">Jelszó</string>
+    <string name="email">Email</string>
+    <string name="login">Bejelentkezés</string>
+    <string name="registration">Regisztráció</string>
+    <string name="registrationView">Regisztráció</string>
+    <string name="customerID">Ügyfélazonosító</string>
+    <string name="exit">Mégse</string>
+    <string name="passwordRe">Jelszó megerősítése</string>
+    <string name="month">hónap</string>
+    <string name="m3">m3</string>
+    <string name="quantity">Fogyasztás</string>
+
+    <array name="month">
+        <item>Január</item>
+        <item>Febuár</item>
+        <item>Március</item>
+        <item>Április</item>
+        <item>Május</item>
+        <item>Június</item>
+        <item>Július</item>
+        <item>Agusztus</item>
+        <item>Szeptember</item>
+        <item>Október</item>
+        <item>November</item>
+        <item>December</item>
+    </array>
+
+    <string-array name="quantity">
+        <item>10 m3</item>
+        <item>7 m3</item>
+        <item>9 m3</item>
+        <item>12 m3</item>
+        <item>11 m3</item>
+        <item>10 m3</item>
+        <item>13 m3</item>
+        <item>12 m3</item>
+        <item>10 m3</item>
+        <item>8 m3</item>
+        <item>8 m3</item>
+        <item>9 m3</item>
+    </string-array>
+
+</resources>
