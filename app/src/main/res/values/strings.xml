@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">vizoralejelento</string>
+    <string name="app_name">Vízóralejelentő</string>
     <string name="password">Jelszó</string>
     <string name="email">Email</string>
     <string name="login">Bejelentkezés</string>

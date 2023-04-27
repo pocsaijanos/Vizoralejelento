@@ -59,16 +59,20 @@ public class MainActivity extends AppCompatActivity {
         String email = emailEditT.getText().toString();
         String password = passwordEditT.getText().toString();
 
-        firebAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
-            @Override
-            public void onComplete(@NonNull Task<AuthResult> task) {
-                if (task.isSuccessful()) {
-                    openProfile();
-                } else {
-                    Toast.makeText(MainActivity.this, "Hibás e-mail vagy jelszó", Toast.LENGTH_LONG).show();
+        if (email.length() > 0 && password.length() > 0) {
+            firebAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                @Override
+                public void onComplete(@NonNull Task<AuthResult> task) {
+                    if (task.isSuccessful()) {
+                        openProfile();
+                    } else {
+                        Toast.makeText(MainActivity.this, "Hibás e-mail vagy jelszó", Toast.LENGTH_LONG).show();
+                    }
                 }
-            }
-        });
+            });
+        } else {
+            Toast.makeText(MainActivity.this, "Hibás e-mail vagy jelszó", Toast.LENGTH_LONG).show();
+        }
     }
 
     public void register(View view) {
